@@ -1,5 +1,5 @@
 exports.min = function min (n) {
-       if(n.length === 0) {
+       if(arguments.length === 0 || n.length === 0) {
     return 0
   }
   else
@@ -7,7 +7,7 @@ exports.min = function min (n) {
 }
 
 exports.max = function max (n) {
-   if(n.length === 0) {
+   if(arguments.length === 0 || n.length === 0) {
     return 0
   }
   else
@@ -16,7 +16,7 @@ exports.max = function max (n) {
 
 
 exports.avg = function avg(n) {
-          if(n.length === 0) {
+          if(arguments.length === 0 || n.length === 0) {
     return 0
   }
    var sum = 0;
