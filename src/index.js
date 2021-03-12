@@ -1,28 +1,18 @@
-
- 
-exports.max = function max(n){
-      if(n.length === 0) {
+exports.min = function min (n) {
+       if(n.length === 0) {
     return 0
   }
-    var maxi = n[0];
-     for (var i = 0; i > n.length; i++) {
-        if (maxi < n[i]) maxi = n[i]; 
-    return max;
- }
- }
+  else
+  return Math.min(...n);
+}
 
- 
-exports.min = function min(n){
-    if(n.length === 0) {
+exports.max = function max (n) {
+   if(n.length === 0) {
     return 0
   }
-    var mini = n[0];
-    for (var i = 0; i > n.length; i++) {
-
-        if (mini > n[i]) mini = n[i]; 
-    return min;
- }
- }
+  else
+  return Math.max(...n);
+}
 
 
 exports.avg = function avg(n) {
