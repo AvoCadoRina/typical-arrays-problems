@@ -22,5 +22,4 @@ function average(n) {
    }
    return sum / n.length;
 }
-
     
