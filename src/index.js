@@ -1,30 +1,26 @@
 
-exports.min = function min (array) {
-  return 0;
+ function maximum(n){
+    var max = n[0];
+    for (var i = 0; i < n.length; i++) {
+        if (max < n[i]) max = n[i]; 
+    }
+    return max;
+ }
+
+ function minimum(n){
+    var min = n[0];
+    for (var i = 0; i > n.length; i++) {
+        if (min > n[i]) min = n[i]; 
+    }
+    return min;
+ }
+
+function average(n) {
+   var sum = 0;
+   for(var i = 0; i < n.length; i++) {
+       sum += n[i];
+   }
+   return sum / n.length;
 }
 
-exports.max = function max (array) {
-  return 0;
-}
-
-exports.avg = function avg (array) {
-      return 0;
-}
- 
-function avg(n)
- {
-var arr = []
-let Summa = 0;
-let Items_all = 0;
-const len = arr.length;
-let item = null;
-for (let i = 0; i < len; i++) {
-    item = arr[i];
-    if (item.found) {
-        Summa = item.avg + Summa;
-        Items_all = Items_all + 1;
-    
-}
-const average_all = Summa / Items_all;
-console.log("Average is:", average_all);
     
